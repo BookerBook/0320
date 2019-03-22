@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+
+<script>
+function myF1(n1,n2) {
+	document.getElementById("result").innerHTML=n1+n2;
+}
+function myF2(n1,n2) {
+	document.getElementById("result").innerHTML=n1-n2;
+}
+function myF3(n1,n2) {
+  	document.getElementById("result").innerHTML=n1*n2;
+}
+function myF4(n1,n2) {
+  	document.getElementById("result").innerHTML=n1/n2;
+}
+</script>
+
+<input type="number" id="n1" value=4>
+<input type="number" id="n2" value=2>
+
+<br>
+
+<button onclick="myF1(eval(n1.value),eval(n2.value))"> 加 </button>
+<button onclick="myF2(eval(n1.value),eval(n2.value))"> 減 </button>
+<button onclick="myF3(eval(n1.value),eval(n2.value))"> 乘 </button>
+<button onclick="myF4(eval(n1.value),eval(n2.value))"> 除 </button>
+<h3>計算結果</h3>
+<output id="result"></output>
+</body>
+</html>
